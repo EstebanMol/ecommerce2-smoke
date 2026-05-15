@@ -1,5 +1,5 @@
 @echo off
 
-cd /d E:\Sistemas\ecommerce-smoke
+cd /d d:\Sistemas\ecommerce2-smoke
 
-npx playwright test >> smoke-log.txt 2>&1
+npx playwright test > smoke-log.txt 2>&1

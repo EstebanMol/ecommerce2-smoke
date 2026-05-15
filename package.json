@@ -1,7 +1,7 @@
 {
-  "name": "pipe-store-smoke-tests",
+  "name": "enova-store-smoke-tests",
   "version": "1.0.0",
-  "description": "Smoke tests para validar precios en pipe.store",
+  "description": "Smoke tests para validar precios en enova",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",

@@ -29,10 +29,10 @@ const SELECTORS = {
 // ─── Páginas a testear ───────────────────────────────────────────────────────
 const PAGINAS = [
   { nombre: 'Home', path: '/' },
-  { nombre: 'Televisores', path: '/categories/60983488-fd4d-44a3-a790-e3c243fabbc0' },
-  { nombre: 'Lavado', path: '/categories/74845a0b-1bab-4812-b7f0-9ff20b68dc5b' },
-  { nombre: 'Heladeras', path: '/categories/62560f36-70a1-4c1a-9dc3-2ddd69626ce6' },
-  { nombre: 'Aire Acondicionado', path: '/categories/19a4181e-e6ae-4d45-8723-41b5f661d48d' },
+  { nombre: 'Televisores', path: '/categories/962b9949-c7e2-4a1e-b4f8-837bc9ecc58d' },
+  { nombre: 'Lavarropas', path: '/categories/4019235d-a385-4c8d-89af-69d8c2e20fe9' },
+  { nombre: 'Celulares', path: '/categories/d910010c-1cc3-4bc3-be52-8036693fb07f' },
+  { nombre: 'Notebook', path: '/categories/663b3f19-01f1-470a-aee0-1dad98a035e3' },
 ];
 
 // ─── Helper: extraer precios visibles de la página ──────────────────────────

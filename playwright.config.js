@@ -10,7 +10,7 @@ module.exports = defineConfig({
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
   ],
   use: {
-    baseURL: 'https://pipe.store',
+    baseURL: 'https://enova.ar',
     headless: true,
     viewport: { width: 1280, height: 800 },
     screenshot: 'only-on-failure',

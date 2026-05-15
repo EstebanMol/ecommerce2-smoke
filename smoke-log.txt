@@ -1,131 +1,109 @@
-◇ injected env (2) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+◇ injected env (0) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
 
 Running 8 tests using 1 worker
 
-◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
-Errores de consola detectados: 10
+◇ injected env (0) from .env // tip: ⌘ enable debugging { debug: true }
+Errores de consola detectados: 3
 
 Detalle de errores JS:
-  1. Failed to load resource: the server responded with a status of 404 ()
+  1. Failed to load resource: the server responded with a status of 500 ()
   2. Failed to load resource: the server responded with a status of 404 ()
   3. Failed to load resource: the server responded with a status of 404 ()
-  4. Failed to load resource: the server responded with a status of 404 ()
-  5. Failed to load resource: the server responded with a status of 404 ()
-  6. Failed to load resource: the server responded with a status of 404 ()
-  7. Failed to load resource: the server responded with a status of 404 ()
-  8. Failed to load resource: the server responded with a status of 404 ()
-  9. Failed to load resource: the server responded with a status of 404 ()
-  10. Failed to load resource: the server responded with a status of 404 ()
-
-Recursos con 404: 5
-
-Detalle de 404s:
-  1. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/zone/52c58e90-4789-463b-8dc2-d56b73ec8db1
-  2. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/zone/514b0196-c46c-496d-9ae0-e82dd212832c
-  3. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/zone/19ed055a-4d66-4845-ba8e-d85d683eb3de
-  4. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/zone/877888bd-1778-4944-ae99-5e7adc8fb090
-  5. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/stock/
-  ok 1 [chromium] › tests\smoke-precios.spec.js:76:3 › 🔥 Smoke Test — Validación de precios pipe.store › El sitio carga sin errores críticos (4.9s)
-
-📋 Página: Home — 5 precios encontrados
-  ✅ AR$ 533.332,00
-  ✅ AR$ 1.099.999,00
-  ✅ AR$ 651.199,00
-  ✅ AR$ 439.999,00
-  ✅ AR$ 633.599,00
-  ok 2 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Home (/) (4.8s)
-
-📋 Página: Televisores — 6 precios encontrados
-  ✅ AR$ 4.899.999,00
-  ✅ AR$ 565.713,00
-  ✅ AR$ 259.999,00
-  ✅ AR$ 1.516.666,00
-  ✅ AR$ 1.083.332,00
-  ✅ AR$ 413.599,00
-  ok 3 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Televisores (/categories/60983488-fd4d-44a3-a790-e3c243fabbc0) (4.9s)
-  x  4 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Lavado (/categories/74845a0b-1bab-4812-b7f0-9ff20b68dc5b) (424ms)
-^C◇ injected env (2) from .env // tip: ⌘ suppress logs { quiet: true }
-
-Running 8 tests using 1 worker
-
-◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
-Errores de consola detectados: 4
-
-Detalle de errores JS:
-  1. Failed to load resource: the server responded with a status of 404 ()
-  2. Failed to load resource: the server responded with a status of 404 ()
-  3. Failed to load resource: the server responded with a status of 404 ()
-  4. Failed to load resource: the server responded with a status of 404 ()
 
 Recursos con 404: 2
 
 Detalle de 404s:
-  1. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/stock/
-  2. https://ecommerce-fob-server.prod.phinxlabcore.com/publication/stock/
-  ok 1 [chromium] › tests\smoke-precios.spec.js:76:3 › 🔥 Smoke Test — Validación de precios pipe.store › El sitio carga sin errores críticos (4.9s)
+  1. https://api.enovastore.com.ar/publication/d4e86dd3-de67-47f8-b3c8-4664de35bc16
+  2. https://api.enovastore.com.ar/publication/1f872d7e-9018-448d-af9b-5bbbd5936e65
+  ok 1 [chromium] › tests\smoke-precios.spec.js:76:3 › 🔥 Smoke Test — Validación de precios pipe.store › El sitio carga sin errores críticos (3.1s)
+⚠️  Timeout esperando precios en Home
+⚠️  No se encontraron precios en Home. Verificar selector: h5[id*="-price"]
+  -  2 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Home (/)
+⚠️  Timeout esperando precios en Televisores
+⚠️  No se encontraron precios en Televisores. Verificar selector: h5[id*="-price"]
+  -  3 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Televisores (/categories/962b9949-c7e2-4a1e-b4f8-837bc9ecc58d)
+⚠️  Timeout esperando precios en Lavarropas
+⚠️  No se encontraron precios en Lavarropas. Verificar selector: h5[id*="-price"]
+  -  4 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Lavarropas (/categories/4019235d-a385-4c8d-89af-69d8c2e20fe9)
+⚠️  Timeout esperando precios en Celulares
+⚠️  No se encontraron precios en Celulares. Verificar selector: h5[id*="-price"]
+  -  5 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Celulares (/categories/d910010c-1cc3-4bc3-be52-8036693fb07f)
+⚠️  Timeout esperando precios en Notebook
+⚠️  No se encontraron precios en Notebook. Verificar selector: h5[id*="-price"]
+  -  6 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Notebook (/categories/663b3f19-01f1-470a-aee0-1dad98a035e3)
 
-📋 Página: Home — 15 precios encontrados
-  ✅ AR$ 489.999,00
-  ✅ AR$ 413.599,00
-  ✅ AR$ 439.999,00
-  ✅ AR$ 783.199,00
-  ✅ AR$ 755.555,00
-  ✅ AR$ 565.713,00
-  ✅ AR$ 1.083.332,00
-  ✅ AR$ 259.999,00
-  ✅ AR$ 533.332,00
-  ✅ AR$ 1.099.999,00
-  ✅ AR$ 651.199,00
-  ✅ AR$ 633.599,00
-  ✅ AR$ 925.299,00
-  ✅ AR$ 823.332,00
-  ✅ AR$ 729.999,00
-  ok 2 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Home (/) (5.0s)
+📦 Testeando detalle de producto: https://enova.ar/
+Selector de detalle no matcheó. Fallback encontró: 0 precios
+  x  7 [chromium] › tests\smoke-precios.spec.js:188:3 › 🔥 Smoke Test — Validación de precios pipe.store › Precio correcto en página de detalle de producto (3.3s)
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
 
-📋 Página: Televisores — 6 precios encontrados
-  ✅ AR$ 4.899.999,00
-  ✅ AR$ 565.713,00
-  ✅ AR$ 259.999,00
-  ✅ AR$ 1.516.666,00
-  ✅ AR$ 1.083.332,00
-  ✅ AR$ 413.599,00
-  ok 3 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Televisores (/categories/60983488-fd4d-44a3-a790-e3c243fabbc0) (4.8s)
+📦 Testeando detalle de producto: https://enova.ar/
+Selector de detalle no matcheó. Fallback encontró: 0 precios
+  x  8 [chromium] › tests\smoke-precios.spec.js:188:3 › 🔥 Smoke Test — Validación de precios pipe.store › Precio correcto en página de detalle de producto (retry #1) (3.3s)
+◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
+  ok 9 [chromium] › tests\smoke-precios.spec.js:241:3 › 🔥 Smoke Test — Validación de precios pipe.store › No hay precios con overflow (bug conocido de producción) (2.4s)
 
-📋 Página: Lavado — 11 precios encontrados
-  ✅ AR$ 999.999,00
-  ✅ AR$ 1.099.999,00
-  ✅ AR$ 479.999,00
-  ✅ AR$ 762.519,00
-  ✅ AR$ 619.799,00
-  ✅ AR$ 651.199,00
-  ✅ AR$ 633.599,00
-  ✅ AR$ 629.199,00
-  ✅ AR$ 439.999,00
-  ✅ AR$ 615.999,00
-  ✅ AR$ 533.332,00
-  ok 4 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Lavado (/categories/74845a0b-1bab-4812-b7f0-9ff20b68dc5b) (4.9s)
 
-📋 Página: Heladeras — 5 precios encontrados
-  ✅ AR$ 729.999,00
-  ✅ AR$ 771.428,00
-  ✅ AR$ 823.332,00
-  ✅ AR$ 925.299,00
-  ✅ AR$ 783.199,00
-  ok 5 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Heladeras (/categories/62560f36-70a1-4c1a-9dc3-2ddd69626ce6) (4.4s)
+  1) [chromium] › tests\smoke-precios.spec.js:188:3 › 🔥 Smoke Test — Validación de precios pipe.store › Precio correcto en página de detalle de producto 
 
-📋 Página: Aire Acondicionado — 4 precios encontrados
-  ✅ AR$ 675.999,00
-  ✅ AR$ 695.199,00
-  ✅ AR$ 755.555,00
-  ✅ AR$ 684.444,00
-  ok 6 [chromium] › tests\smoke-precios.spec.js:115:5 › 🔥 Smoke Test — Validación de precios pipe.store › Precios correctos en: Aire Acondicionado (/categories/19a4181e-e6ae-4d45-8723-41b5f661d48d) (4.8s)
+    Error: Debe haber al menos un precio en la página de detalle
 
-📦 Testeando detalle de producto: https://pipe.store/
-Precios encontrados: 15 | Válidos: 15 | Inválidos: 0
-  ok 7 [chromium] › tests\smoke-precios.spec.js:188:3 › 🔥 Smoke Test — Validación de precios pipe.store › Precio correcto en página de detalle de producto (4.7s)
-  ok 8 [chromium] › tests\smoke-precios.spec.js:241:3 › 🔥 Smoke Test — Validación de precios pipe.store › No hay precios con overflow (bug conocido de producción) (4.6s)
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
 
-  8 passed (39.7s)
+    Expected: > [32m0[39m
+    Received:   [31m0[39m
+
+      217 |     }
+      218 |
+    > 219 |     expect(preciosRaw.length, 'Debe haber al menos un precio en la página de detalle').toBeGreaterThan(0);
+          |                                                                                        ^
+      220 |
+      221 |     const reporte = validarPrecios(preciosRaw);
+      222 |
+        at D:\sistemas\ecommerce2-smoke\tests\smoke-precios.spec.js:219:88
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\smoke-precios-🔥-Smoke-Tes-f9158-gina-de-detalle-de-producto-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\smoke-precios-🔥-Smoke-Tes-f9158-gina-de-detalle-de-producto-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\smoke-precios-🔥-Smoke-Tes-f9158-gina-de-detalle-de-producto-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Debe haber al menos un precio en la página de detalle
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: > [32m0[39m
+    Received:   [31m0[39m
+
+      217 |     }
+      218 |
+    > 219 |     expect(preciosRaw.length, 'Debe haber al menos un precio en la página de detalle').toBeGreaterThan(0);
+          |                                                                                        ^
+      220 |
+      221 |     const reporte = validarPrecios(preciosRaw);
+      222 |
+        at D:\sistemas\ecommerce2-smoke\tests\smoke-precios.spec.js:219:88
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\smoke-precios-🔥-Smoke-Tes-f9158-gina-de-detalle-de-producto-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\smoke-precios-🔥-Smoke-Tes-f9158-gina-de-detalle-de-producto-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\smoke-precios-🔥-Smoke-Tes-f9158-gina-de-detalle-de-producto-chromium-retry1\error-context.md
+
+  1 failed
+    [chromium] › tests\smoke-precios.spec.js:188:3 › 🔥 Smoke Test — Validación de precios pipe.store › Precio correcto en página de detalle de producto 
+  5 skipped
+  2 passed (2.2m)
 
 To open last HTML report run:
 [36m[39m
