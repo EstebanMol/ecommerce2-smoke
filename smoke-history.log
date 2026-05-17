@@ -1,0 +1,291 @@
+ 
+================================== 
+INICIO TEST: dom. 17/05/2026 11:13:43,70 
+================================== 
+◇ injected env (2) from .env // tip: ⌘ suppress logs { quiet: true }
+
+Running 8 tests using 1 worker
+
+◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
+Errores de consola detectados: 3
+
+Detalle de errores JS:
+  1. Failed to load resource: the server responded with a status of 500 ()
+  2. Failed to load resource: the server responded with a status of 404 ()
+  3. Failed to load resource: the server responded with a status of 404 ()
+
+Recursos con 404: 2
+
+Detalle de 404s:
+  1. https://api.enovastore.com.ar/publication/d4e86dd3-de67-47f8-b3c8-4664de35bc16
+  2. https://api.enovastore.com.ar/publication/1f872d7e-9018-448d-af9b-5bbbd5936e65
+  ok 1 [chromium] › tests\smoke-precios.spec.js:71:3 › 🔥 Smoke Test — Validación de precios enova store › El sitio carga sin errores críticos (3.2s)
+node.exe : ⚠️  Timeout esperando precios en Home
+En línea: 1 Carácter: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠️  Timeout esperando precios en Home:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+📋 Página: Home — 19 precios encontrados
+  ✅ $123.999
+  ✅ $1.249.999
+  ✅ $429.999
+  ✅ $25.999
+  ✅ $729.999
+  ✅ $299.999
+  ✅ $899.999
+  ✅ $599.999
+  ✅ $789.999
+  ✅ $849.999
+  ✅ $769.999
+  ✅ $779.999
+  ✅ $714.999
+  ✅ $619.799
+  ✅ $739.999
+  ✅ $866.499
+  ✅ $479.999
+  ✅ $499.999
+  ✅ $699.999
+  ok 2 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Home (/) (23.1s)
+⚠️  Timeout esperando precios en Televisores
+
+📋 Página: Televisores — 4 precios encontrados
+  ✅ $659.999
+  ✅ $1.249.999
+  ✅ $1.749.999
+  ✅ $299.999
+  ok 3 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Televisores (/categories/962b9949-c7e2-4a1e-b4f8-837bc9ecc58d) (24.7s)
+⚠️  Timeout esperando precios en Lavarropas
+
+📋 Página: Lavarropas — 8 precios encontrados
+  ✅ $479.999
+  ✅ $866.499
+  ✅ $714.999
+  ✅ $499.999
+  ✅ $719.999
+  ✅ $739.999
+  ✅ $699.999
+  ✅ $599.999
+  ok 4 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Lavarropas (/categories/4019235d-a385-4c8d-89af-69d8c2e20fe9) (24.7s)
+⚠️  Timeout esperando precios en Celulares
+
+📋 Página: Celulares — 2 precios encontrados
+  ✅ $123.999
+  ✅ $284.999
+  ok 5 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Celulares (/categories/d910010c-1cc3-4bc3-be52-8036693fb07f) (24.3s)
+⚠️  Timeout esperando precios en Notebook
+
+📋 Página: Notebook — 1 precios encontrados
+  ✅ $429.999
+  ok 6 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Notebook (/categories/663b3f19-01f1-470a-aee0-1dad98a035e3) (24.4s)
+
+📦 Testeando detalle de producto: https://enova.ar/
+Precios encontrados: 19 | Válidos: 19 | Inválidos: 0
+  ok 7 [chromium] › tests\smoke-precios.spec.js:183:3 › �� Smoke Test — Validación de precios enova store › Precio correcto en página de detalle de producto (4.0s)
+  ok 8 [chromium] › tests\smoke-precios.spec.js:236:3 › 🔥 Smoke Test — Validación de precios enova store › No hay precios con overflow (bug conocido de producción) (2.8s)
+
+  8 passed (2.2m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+================================== 
+FIN TEST: dom. 17/05/2026 11:13:43,71 
+================================== 
+ 
+================================== 
+INICIO TEST: dom. 17/05/2026 11:19:14,92 
+================================== 
+◇ injected env (2) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+
+Running 8 tests using 1 worker
+
+◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
+Errores de consola detectados: 3
+
+Detalle de errores JS:
+  1. Failed to load resource: the server responded with a status of 500 ()
+  2. Failed to load resource: the server responded with a status of 404 ()
+  3. Failed to load resource: the server responded with a status of 404 ()
+
+Recursos con 404: 2
+
+Detalle de 404s:
+  1. https://api.enovastore.com.ar/publication/d4e86dd3-de67-47f8-b3c8-4664de35bc16
+  2. https://api.enovastore.com.ar/publication/1f872d7e-9018-448d-af9b-5bbbd5936e65
+  ok 1 [chromium] › tests\smoke-precios.spec.js:71:3 › �� Smoke Test — Validación de precios enova store › El sitio carga sin errores críticos (3.7s)
+node.exe : ⚠️  Timeout esperando precios en Home
+En línea: 1 Carácter: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠️  Timeout esperando precios en Home:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+📋 Página: Home — 19 precios encontrados
+  ✅ $123.999
+  ✅ $1.249.999
+  ✅ $429.999
+  ✅ $25.999
+  ✅ $729.999
+  ✅ $299.999
+  ✅ $899.999
+  ✅ $599.999
+  ✅ $789.999
+  ✅ $849.999
+  ✅ $769.999
+  ✅ $779.999
+  ✅ $714.999
+  ✅ $619.799
+  ✅ $739.999
+  ✅ $866.499
+  ✅ $479.999
+  ✅ $499.999
+  ✅ $699.999
+  ok 2 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Home (/) (23.5s)
+⚠️  Timeout esperando precios en Televisores
+
+📋 Página: Televisores — 4 precios encontrados
+  ✅ $659.999
+  ✅ $1.249.999
+  ✅ $1.749.999
+  ✅ $299.999
+  ok 3 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Televisores (/categories/962b9949-c7e2-4a1e-b4f8-837bc9ecc58d) (25.2s)
+⚠️  Timeout esperando precios en Lavarropas
+
+📋 Página: Lavarropas — 8 precios encontrados
+  ✅ $479.999
+  ✅ $866.499
+  ✅ $714.999
+  ✅ $499.999
+  ✅ $719.999
+  ✅ $739.999
+  ✅ $699.999
+  ✅ $599.999
+  ok 4 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Lavarropas (/categories/4019235d-a385-4c8d-89af-69d8c2e20fe9) (25.9s)
+⚠️  Timeout esperando precios en Celulares
+
+📋 Página: Celulares — 2 precios encontrados
+  ✅ $123.999
+  ✅ $284.999
+  ok 5 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Celulares (/categories/d910010c-1cc3-4bc3-be52-8036693fb07f) (24.5s)
+⚠️  Timeout esperando precios en Notebook
+
+📋 Página: Notebook — 1 precios encontrados
+  ✅ $429.999
+  ok 6 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Notebook (/categories/663b3f19-01f1-470a-aee0-1dad98a035e3) (24.4s)
+
+📦 Testeando detalle de producto: https://enova.ar/
+Precios encontrados: 19 | Válidos: 19 | Inválidos: 0
+  ok 7 [chromium] › tests\smoke-precios.spec.js:183:3 › 🔥 Smoke Test — Validación de precios enova store › Precio correcto en página de detalle de producto (3.3s)
+  ok 8 [chromium] › tests\smoke-precios.spec.js:236:3 › 🔥 Smoke Test — Validación de precios enova store › No hay precios con overflow (bug conocido de producción) (3.6s)
+
+  8 passed (2.3m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+================================== 
+FIN TEST: dom. 17/05/2026 11:19:14,92 
+================================== 
+ 
+================================== 
+INICIO TEST: dom. 17/05/2026 11:22:49,18 
+================================== 
+◇ injected env (2) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+
+Running 8 tests using 1 worker
+
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+Errores de consola detectados: 3
+
+Detalle de errores JS:
+  1. Failed to load resource: the server responded with a status of 500 ()
+  2. Failed to load resource: the server responded with a status of 404 ()
+  3. Failed to load resource: the server responded with a status of 404 ()
+
+Recursos con 404: 2
+
+Detalle de 404s:
+  1. https://api.enovastore.com.ar/publication/1f872d7e-9018-448d-af9b-5bbbd5936e65
+  2. https://api.enovastore.com.ar/publication/d4e86dd3-de67-47f8-b3c8-4664de35bc16
+  ok 1 [chromium] › tests\smoke-precios.spec.js:71:3 › 🔥 Smoke Test — Validación de precios enova store › El sitio carga sin errores críticos (3.3s)
+node.exe : ⚠️  Timeout esperando precios en Home
+En línea: 1 Carácter: 1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (⚠️  Timeout esperando precios en Home:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+📋 Página: Home — 19 precios encontrados
+  ✅ $123.999
+  ✅ $1.249.999
+  ✅ $429.999
+  ✅ $25.999
+  ✅ $729.999
+  ✅ $299.999
+  ✅ $899.999
+  ✅ $599.999
+  ✅ $789.999
+  ✅ $849.999
+  ✅ $769.999
+  ✅ $779.999
+  ✅ $714.999
+  ✅ $619.799
+  ✅ $739.999
+  ✅ $866.499
+  ✅ $479.999
+  ✅ $499.999
+  ✅ $699.999
+  ok 2 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Home (/) (23.0s)
+⚠️  Timeout esperando precios en Televisores
+
+📋 Página: Televisores — 4 precios encontrados
+  ✅ $659.999
+  ✅ $1.249.999
+  ✅ $1.749.999
+  ✅ $299.999
+  ok 3 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Televisores (/categories/962b9949-c7e2-4a1e-b4f8-837bc9ecc58d) (24.5s)
+⚠️  Timeout esperando precios en Lavarropas
+
+📋 Página: Lavarropas — 8 precios encontrados
+  ✅ $479.999
+  ✅ $866.499
+  ✅ $714.999
+  ✅ $499.999
+  ✅ $719.999
+  ✅ $739.999
+  ✅ $699.999
+  ✅ $599.999
+  ok 4 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Lavarropas (/categories/4019235d-a385-4c8d-89af-69d8c2e20fe9) (24.6s)
+⚠️  Timeout esperando precios en Celulares
+
+📋 Página: Celulares — 2 precios encontrados
+  ✅ $123.999
+  ✅ $284.999
+  ok 5 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Celulares (/categories/d910010c-1cc3-4bc3-be52-8036693fb07f) (24.5s)
+⚠️  Timeout esperando precios en Notebook
+
+📋 Página: Notebook — 1 precios encontrados
+  ✅ $429.999
+  ok 6 [chromium] › tests\smoke-precios.spec.js:110:5 › 🔥 Smoke Test — Validación de precios enova store › Precios correctos en: Notebook (/categories/663b3f19-01f1-470a-aee0-1dad98a035e3) (24.4s)
+
+📦 Testeando detalle de producto: https://enova.ar/
+Precios encontrados: 19 | Válidos: 19 | Inválidos: 0
+  ok 7 [chromium] › tests\smoke-precios.spec.js:183:3 › 🔥 Smoke Test — Validación de precios enova store › Precio correcto en página de detalle de producto (3.3s)
+  ok 8 [chromium] › tests\smoke-precios.spec.js:236:3 › 🔥 Smoke Test — Validación de precios enova store › No hay precios con overflow (bug conocido de producción) (2.9s)
+
+  8 passed (2.2m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m
+================================== 
+FIN TEST: dom. 17/05/2026 11:22:49,19 
+================================== 

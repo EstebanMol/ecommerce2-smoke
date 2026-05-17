@@ -6,11 +6,11 @@
  */
 
 const PRECIO_RULES = {
-  PREFIX: 'AR$',
-  MAX_LENGTH: 25,        // era 20 — precios como "AR$ 10.888.886,67" tienen 18 chars
-  MAX_DIGITS: 12,        // era 10 — ese precio tiene exactamente 10 dígitos
+  PREFIX: '$',        // era 'AR$'
+  MAX_LENGTH: 25,
+  MAX_DIGITS: 12,
   MIN_VALUE: 1_000,
-  MAX_VALUE: 999_999_999, // era 99_999_999 — subimos el techo a ~1 millón de dólares
+  MAX_VALUE: 999_999_999,
 };
 
 /**

@@ -1,6 +1,6 @@
 // tests/smoke-precios.spec.js
 /**
- * Smoke Test: Validación de precios en pipe.store
+ * Smoke Test: Validación de precios en enova store
  *
  * Detecta el bug conocido donde los precios se renderizan con valores
  * absurdamente largos (ej: AR$ 179.769.313.486.231.570.000.000...)
@@ -14,15 +14,10 @@ const { test, expect } = require('@playwright/test');
 const { validarPrecio, validarPrecios } = require('./helpers/priceValidator');
 
 // ─── Selectores centralizados ────────────────────────────────────────────────
-// Ajustar si el HTML de pipe.store cambia  
+// Ajustar si el HTML de enova store cambia  
 const SELECTORS = {
-  // Precio en tarjetas de producto (Material UI)
-  PRECIO_TARJETA: 'h5[id*="-price"]',
-
-  // Precio en página de detalle
-  PRECIO_DETALLE: 'h5[id*="-price"]',
-
-  // Tarjetas de producto
+  PRECIO_TARJETA: 'h6[id*="-price"]',
+  PRECIO_DETALLE: 'h6[id*="-price"]',
   TARJETA_PRODUCTO: '[class*="MuiCard"], [class*="MuiPaper"], [class*="product"]',
 };
 
@@ -43,7 +38,7 @@ async function extraerPrecios(page, selector) {
 
     elementos.forEach((el) => {
       const texto = el.innerText?.trim() || el.textContent?.trim();
-      if (texto && texto.includes('AR$')) {
+      if (texto && (texto.includes('AR$') || texto.includes('$'))) {
         // Tomamos la primera línea (por si el elemento tiene info adicional)
         const primeraLinea = texto.split('\n')[0].trim();
         if (primeraLinea) textos.push(primeraLinea);
@@ -71,7 +66,7 @@ async function marcarPreciosRotos(page, selector) {
 // TEST SUITE PRINCIPAL
 // ════════════════════════════════════════════════════════════════════════════
 
-test.describe('🔥 Smoke Test — Validación de precios pipe.store', () => {
+test.describe('🔥 Smoke Test — Validación de precios enova store', () => {
 
   test('El sitio carga sin errores críticos', async ({ page }) => {
 
@@ -255,7 +250,7 @@ test.describe('🔥 Smoke Test — Validación de precios pipe.store', () => {
 
       while ((nodo = walker.nextNode())) {
         const texto = nodo.textContent?.trim();
-        if (texto && texto.includes('AR$') && texto.length > 30) {
+        if (texto && (texto.includes('AR$') || texto.includes('$')) && texto.length > 30) {
           encontrados.push({
             texto: texto.substring(0, 100), // Solo los primeros 100 chars para el log
             longitud: texto.length,
